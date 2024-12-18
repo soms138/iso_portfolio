@@ -1,0 +1,59 @@
+/* Firefox */
+html {scrollbar-width: 3px; scrollbar-color: #222 #f1f1f1;}
+/* Opera */
+html::-o-scrollbar {width: 3px;}/*스크롤바 크기*/
+html::-o-scrollbar-thumb {background-color: #222; border-radius: 1.5px;}/*스크롤 드래그바*/
+html::-o-scrollbar-thumb:hover {background-color: #555;}
+/* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 3px;}/*스크롤바 크기*/
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}/*스크롤바 배경*/
+::-webkit-scrollbar-thumb {background-color: #222; border-radius: 1.5px;}/*스크롤 드래그바*/
+::-webkit-scrollbar-thumb:hover {background-color: #555;}
+
+body, html {scroll-behavior: smooth;}
+
+/* mouse 이동 */
+#mouse {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 300;
+    border-radius: 50%;
+    background-image: url(../images/back_sea.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border: 2px solid #fff;
+    cursor: none;
+}
+
+header {}
+header .header_wrap {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 100px;
+    z-index: 900;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header span {
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.0625rem;
+    width: 85px;
+    color: #fff;
+}
+header span:nth-last-child(1) {text-align: end;}
+header a {
+    display: inline-block;
+    background: url(../images/icon/ico_home_w.png) no-repeat center / cover;
+    width: 20px; 
+    height: 20px;
+}

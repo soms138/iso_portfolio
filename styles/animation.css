@@ -1,0 +1,13 @@
+@keyframes opacity {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes opacity2 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes opacity_fix {
+    0% {opacity: 0;}
+    100% {opacity: 1; letter-spacing: 1.2rem;}
+}
