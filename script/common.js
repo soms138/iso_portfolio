@@ -74,7 +74,7 @@ window.addEventListener('scroll',function(){
 
 window.addEventListener("mousemove", (e) => {
     gsap.to(cursor, {
-        duration: 0.5,
+        duration: 0.2,
         left: e.pageX - circle.width/2,
         top: e.pageY- circle.height/2
     });

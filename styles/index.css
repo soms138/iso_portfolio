@@ -92,7 +92,6 @@ main .intro::after {
 }
 main .intro_wrap > h1, main .intro_wrap > p {
     font-family: "Montserrat", sans-serif;
-    font-size: 6rem;
     font-weight: 700;
     letter-spacing: -0.1rem;
     position: absolute;
@@ -106,6 +105,7 @@ main .intro_wrap > h1, main .intro_wrap > p {
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
 }
+main .intro .intro_wrap > p {font-size: 4.5rem;}
 main .intro .intro_wrap > p:nth-child(1) {
     animation: opacity 0.5s ease forwards;
     animation-delay: 1s;
@@ -116,9 +116,12 @@ main .intro .intro_wrap > p:nth-child(2) {
     animation-delay: 1.5s;
 }
 main .intro .intro_wrap > h1 {
+    font-size: 5.5rem;
     opacity: 0;
     animation: opacity_fix 1.5s ease forwards;
     animation-delay: 2.5s;
+    transition: letter-spacing 0.5s 3s linear;
+    letter-spacing: 1.1rem;
 }
 
 /* about */
@@ -206,7 +209,7 @@ main .web .txt .tit .desc {
     flex-flow: row nowrap;
 }
 main .web .txt .tit .desc p {
-    color: #fff;
+    color: rgb(255, 255, 255, 0.8);
     margin-right: 20px;
     font-size: 1.25rem;
 }
@@ -307,10 +310,14 @@ main .section .contents ul li a > p {
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    background-color: greenyellow;
     margin-bottom: 30px;
+    background-color: lightcoral;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transition: all 0.3s;
 }
-main .section .contents ul li a > p:hover {background-size: 110%;}
+main .section .contents ul li a > p:hover {background-size: 110% auto;}
 main .section .contents ul li a .txt {}
 main .section .contents ul li a .txt .tit {
     color: #fff;
@@ -323,7 +330,7 @@ main .section .contents ul li a .txt .desc {
     flex-flow: row nowrap;
 }
 main .section .contents ul li a .txt .desc em {
-    color: #fff;
+    color: rgb(255, 255, 255, 0.5);
     margin-right: 10px;
     font-size: 1.15rem;
 }
@@ -345,19 +352,19 @@ main .section .contents .more img {
 }
 
 /* promo img 썸네일 이미지*/
-main #promo .contents ul:nth-child(1) li a > p {background-image: url();}
-main #promo .contents ul:nth-child(2) li a > p {background-image: url();}
-main #promo .contents ul:nth-child(3) li a > p {background-image: url();}
+main #promo .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_korea.jpg);}
+main #promo .contents ul li:nth-child(2) a > p {background-image: url(../images/thumb_brand.jpg);}
+main #promo .contents ul li:nth-child(3) a > p {background-image: url(../images/thumb_attendance.jpg);}
 
 /* banner img */
-main #banner .contents ul:nth-child(1) li a > p {background-image: url();}
-main #banner .contents ul:nth-child(2) li a > p {background-image: url();}
-main #banner .contents ul:nth-child(3) li a > p {background-image: url();}
+main #banner .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_denim.jpg);}
+main #banner .contents ul li:nth-child(2) a > p {background-image: url();}
+main #banner .contents ul li:nth-child(3) a > p {background-image: url();}
 
 /* sns img */
-main #sns .contents ul:nth-child(1) li a > p {background-image: url();}
-main #sns .contents ul:nth-child(2) li a > p {background-image: url();}
-main #sns .contents ul:nth-child(3) li a > p {background-image: url();}
+main #sns .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_tteokbokki.jpg);}
+main #sns .contents ul li:nth-child(2) a > p {background-image: url(../images/thumb_walker.jpg);}
+main #sns .contents ul li:nth-child(3) a > p {background-image: url();}
 
 /* pop up 이미지 */
 .popup {}
