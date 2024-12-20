@@ -354,12 +354,12 @@ main .section .contents .more img {
 /* promo img 썸네일 이미지*/
 main #promo .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_korea.jpg);}
 main #promo .contents ul li:nth-child(2) a > p {background-image: url(../images/thumb_brand.jpg);}
-main #promo .contents ul li:nth-child(3) a > p {background-image: url(../images/thumb_attendance.jpg);}
+main #promo .contents ul li:nth-child(3) a > p {background-image: url(../images/thumb_diary.jpg);}
 
 /* banner img */
 main #banner .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_denim.jpg);}
 main #banner .contents ul li:nth-child(2) a > p {background-image: url();}
-main #banner .contents ul li:nth-child(3) a > p {background-image: url();}
+main #banner .contents ul li:nth-child(3) a > p {background-image: url(../images/thumb_red.jpg);}
 
 /* sns img */
 main #sns .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_tteokbokki.jpg);}
