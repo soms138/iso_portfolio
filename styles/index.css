@@ -120,7 +120,7 @@ main .intro .intro_wrap > h1 {
     opacity: 0;
     animation: opacity_fix 1.5s ease forwards;
     animation-delay: 2.5s;
-    transition: letter-spacing 0.5s 3s linear;
+    transition: letter-spacing 0.5s 3s linear !important;
     letter-spacing: 1.1rem;
 }
 
