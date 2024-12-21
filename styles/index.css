@@ -364,7 +364,7 @@ main #banner .contents ul li:nth-child(3) a > p {background-image: url(../images
 /* sns img */
 main #sns .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_tteokbokki.jpg);}
 main #sns .contents ul li:nth-child(2) a > p {background-image: url(../images/thumb_walker.jpg);}
-main #sns .contents ul li:nth-child(3) a > p {background-image: url();}
+main #sns .contents ul li:nth-child(3) a > p {background-image: url(../images/thumb_romand.jpg);}
 
 /* pop up 이미지 */
 .popup {}
