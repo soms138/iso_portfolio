@@ -105,7 +105,7 @@ main .intro_wrap > h1, main .intro_wrap > p {
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
 }
-main .intro .intro_wrap > p {font-size: 4.5rem;}
+main .intro .intro_wrap > p {font-size: 5rem;}
 main .intro .intro_wrap > p:nth-child(1) {
     animation: opacity 0.5s ease forwards;
     animation-delay: 1s;
@@ -116,7 +116,7 @@ main .intro .intro_wrap > p:nth-child(2) {
     animation-delay: 1.5s;
 }
 main .intro .intro_wrap > h1 {
-    font-size: 5.5rem;
+    font-size: 6rem;
     opacity: 0;
     animation: opacity_fix 1.5s ease forwards;
     animation-delay: 2.5s;
@@ -274,10 +274,11 @@ main .design {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    position: relative;
 }
-.promo_wrap {padding: 120px 0 0;}
-.banner_wrap {padding: 100px 0 0;}
-.sns_wrap {padding: 100px 0 120px;}
+.promo_wrap {padding: 100px 0 0;}
+.banner_wrap {padding: 50px 0 0;}
+.sns_wrap {padding: 50px 0 100px;}
 main #promo h2, main #banner h2, main #sns h2 {
     display: flex;
     flex-flow: row nowrap;
@@ -299,12 +300,14 @@ main #promo h2 span, main #banner h2 span, main #sns h2 span {
 main .section .contents {}
 main .section .contents ul {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    width: 970px;
     align-items: center;
-    justify-content: center;
+    /* height: 400px; */
+    /* overflow: hidden; */
 }
-main .section .contents ul li {margin-right: 35px;}
-main .section .contents ul li:nth-last-child(1) {margin-right: 0;}
+main .section .contents ul li {margin: 0 35px 50px 0;}
+main .section .contents ul li:nth-child(3n) {margin-right: 0;}
 main .section .contents ul li a {}
 main .section .contents ul li a > p {
     width: 300px;
@@ -343,18 +346,27 @@ main .section .contents ul li a .txt .desc span {
 main .section .contents .more {
     display: flex;
     align-items: center;
-    margin-left: -6%;
+    margin-left: -25px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    /* transform: translateX(-50%); */
 }
-main .section .contents .more span {color: #aaa;}
+main .section .contents .more span {
+    color: #aaa;
+    font-size: 1.15rem;
+}
 main .section .contents .more img {
     width: 10px; height: 10px;
-    margin-left: 3px;
+    margin-right: 5px;
 }
 
 /* promo img 썸네일 이미지*/
 main #promo .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_korea.jpg);}
-main #promo .contents ul li:nth-child(2) a > p {background-image: url(../images/thumb_brand.jpg);}
+main #promo .contents ul li:nth-child(2) a > p {background-image: url(../images/thumb_starbucks.jpg);}
 main #promo .contents ul li:nth-child(3) a > p {background-image: url(../images/thumb_diary.jpg);}
+main #promo .contents ul li:nth-child(4) a > p {background-image: url(../images/thumb_brand.jpg);}
+main #promo .contents ul li:nth-child(5) a > p {background-image: url(../images/thumb_attendance.jpg);}
 
 /* banner img */
 main #banner .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_denim.jpg);}

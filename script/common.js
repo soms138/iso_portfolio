@@ -11,17 +11,15 @@ const intro = document.querySelector('.intro_wrap')
 
 let boolean = true
 
-header.style.transition = 'all 0.3s linear'
+header_txt.style.transition = 'all 0.3s linear'
 
 window.addEventListener('scroll',function(){
-    if(window.pageYOffset > section[1].offsetTop-100){
-        header.style.backgroundColor = 'rgb(255, 255, 255, 0.2)'
-        header.style.borderBottom = 'rgb(255, 255, 255, 0.8)'
-        cursor.style.cursor = 'auto'
+    if(window.pageYOffset > section[0].offsetTop+200){
+        header_txt.style.backgroundColor = 'rgb(34, 34, 34, 0.7)'
+        header_txt.style.borderBottom = 'solid 1px rgb(255, 255, 255, 0.3)'
     }else{
-        header.style.backgroundColor = 'rgb(255, 255, 255, 0)'
-        header.style.borderBottom = 'rgb(255, 255, 255, 0)'
-        cursor.style.cursor = 'none'
+        header_txt.style.backgroundColor = 'rgb(255, 255, 255, 0)'
+        header_txt.style.borderBottom = 'solid 1px rgb(255, 255, 255, 0)'
     }
 })
 
