@@ -1,15 +1,48 @@
-const header = document.querySelector('header')
 const header_txt = document.querySelector('.header_wrap')
-const home = document.querySelector('.header_wrap a')
 const section = document.querySelectorAll('.section')
-const menuBtn = document.querySelector('.nav > li > a')
-const nav_open = document.querySelectorAll('.menu > span')
-const body = document.querySelector('body,html')
+const navBtn = document.querySelector('.nav_t > li > a')
+const navLine = document.querySelectorAll('.nav_t > li > a > span')
+const nav_open = document.querySelector('.nav_open_wrap')
+const menu = document.querySelectorAll('.menu')
 const cursor = document.querySelector('#mouse')
 const circle = cursor.getBoundingClientRect();
 const intro = document.querySelector('.intro_wrap')
 
 let boolean = true
+
+
+navBtn.addEventListener('click',function(e){
+    e.preventDefault()
+    if(boolean == true){
+        navLine[0].style.transform = 'translateY(8.2px) rotate(45deg)'
+        navLine[2].style.transform = 'translateY(-8.2px) rotate(-45deg)'
+        navLine[1].style.display = 'none'
+        nav_open.style.transform = 'translateY(0)';
+        function menuEvent(a){
+            menu[a].addEventListener('click',function(){
+                nav_open.style.transform = 'translateY(-100%)';
+                navLine[0].style.transform = 'translateY(0) rotate(0)'
+                navLine[2].style.transform = 'translateY(0) rotate(0)'
+                navLine[1].style.display = 'block'
+                nav_open.style.transform = 'translateY(-100%)';
+            })
+        }
+        menuEvent(0)
+        menuEvent(1)
+        menuEvent(2)
+        menuEvent(3)
+        menuEvent(4)
+        
+        boolean = false
+    }else{
+        navLine[0].style.transform = 'translateY(0) rotate(0)'
+        navLine[2].style.transform = 'translateY(0) rotate(0)'
+        navLine[1].style.display = 'block'
+        nav_open.style.transform = 'translateY(-100%)';
+
+        boolean = true
+    }
+})
 
 header_txt.style.transition = 'all 0.3s linear'
 
@@ -22,53 +55,6 @@ window.addEventListener('scroll',function(){
         header_txt.style.borderBottom = 'solid 1px rgb(255, 255, 255, 0)'
     }
 })
-
-// header.style.transition = 'all 0.3s linear'
-
-// window.addEventListener('scroll',function(){
-//     if(window.pageYOffset > section[1].offsetTop-100){
-//         header_txt.children[0].style.color = '#fff'
-//         header_txt.children[2].style.color = '#fff'
-//         home.style.backgroundImage = 'url(../images/icon/ico_home_w.png)'
-//     }else{
-//         header_txt.children[0].style.color = '#000'
-//         header_txt.children[2].style.color = '#000'
-//         home.style.backgroundImage = 'url(../images/icon/ico_home.png)'
-//     }
-// })
-
-// window.addEventListener('scroll',function(){
-//     if(window.pageYOffset > section[1].offsetTop-400){
-//         menuBtn.children[0].style.backgroundColor = 'rgba(255, 255, 255,1)'
-//         menuBtn.children[1].style.backgroundColor = 'rgba(255, 255, 255,1)'
-//         menuBtn.children[2].style.backgroundColor = 'rgba(255, 255, 255,1)'
-//     }else{
-//         menuBtn.children[0].style.backgroundColor = 'rgba(0, 0, 0,1)'
-//         menuBtn.children[1].style.backgroundColor = 'rgba(0, 0, 0,1)'
-//         menuBtn.children[2].style.backgroundColor = 'rgba(0, 0, 0,1)'
-//     }
-// })
-
-// function section_event(a){
-//     section[a].style.transition = 'all 0.3s linear'
-//     window.addEventListener('scroll',function(){
-//         if(window.pageYOffset > section[a].offsetTop-500){
-//             menuBtn.children[0].style.backgroundColor = 'rgba(255, 255, 255,1)'
-//             menuBtn.children[1].style.backgroundColor = 'rgba(255, 255, 255,1)'
-//             menuBtn.children[2].style.backgroundColor = 'rgba(255, 255, 255,1)'
-//         }else{
-//             menuBtn.children[0].style.backgroundColor = 'rgba(0, 0, 0,1)'
-//             menuBtn.children[1].style.backgroundColor = 'rgba(0, 0, 0,1)'
-//             menuBtn.children[2].style.backgroundColor = 'rgba(0, 0, 0,1)'
-//         }
-//     })
-// }
-// section_event(1)
-
-// window.addEventListener('mousemove',function(e){
-//     cursor.style.left = `${e.clientX}px` // X축
-//     cursor.style.top = `${e.clientY}px` // Y축
-// })
 
 window.addEventListener("mousemove", (e) => {
     gsap.to(cursor, {

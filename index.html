@@ -18,9 +18,6 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -32,7 +29,27 @@
     <header>
         <div class="header_wrap">
             <span>LEE SOMIN</span>
-            <a href="#"></a>
+            <a href="#" class="home"></a>
+            <nav>
+                <ul class="nav_t">
+                    <li>
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <div class="nav_open_wrap">
+                            <ul class="nav_open_t">
+                                <li><a href="#aboutMe" class="menu"><span>ABOUT</span></a></li>
+                                <li><a href="#website" class="menu"><span>WEB</span></a></li>
+                                <li><a href="#promo" class="menu"><span>PROMO</span></a></li>
+                                <li><a href="#banner" class="menu"><span>BANNER</span></a></li>
+                                <li><a href="#sns" class="menu"><span>SNS</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
             <span>DESIGN</span>
         </div>
     </header>
@@ -58,19 +75,21 @@
         <div class="section intro">
             <p id="mouse"></p>
             <div class="intro_wrap">
-                <p>DESIGNER</p>
-                <p>PURBLISHER</p>
-                <h1>PORTFOLIO</h1>
+                <p>Designer</p>
+                <p>Purblisher</p>
+                <h1>Portfolio</h1>
             </div>
         </div>
         <div class="section about" id="aboutMe">
-            <!-- background fixed 넣기!!! -->
             <div class="about_wrap">
                 <h2>
                     <em>About Me</em>
                     <span></span>
                 </h2>
-                <p>소개 내용</p>
+                <p>
+                    사용자 중심의 디자인을 통해 편안함을 느낄 수 있도록 구성하고, <br>
+                    웹사이트를 기능적인 공간으로 만들어가는 성장형 디블리셔가 되고 싶습니다.
+                </p>
             </div>
         </div>
         <div class="section project">
@@ -94,7 +113,7 @@
                         <span></span>
                     </a>
                 </div>
-                <video src=""></video>
+                <video src="./video/cj.mp4" autoplay muted loop></video>
             </div>
             <div class="section web web2">
                 <div class="txt">
@@ -116,7 +135,7 @@
                         <span></span>
                     </a>
                 </div>
-                <video src=""></video>
+                <video src="" autoplay muted loop></video>
             </div>
             <div class="section web web3">
                 <div class="txt">
@@ -137,11 +156,10 @@
                         <span></span>
                     </a>
                 </div>
-                <video src=""></video>
+                <video src="./video/flow.mp4" autoplay muted loop></video>
             </div>
         </div>
         <div class="section design">
-            <!-- background video 넣기!!! -->
             <div id="promo">
                 <div class="promo_wrap">
                     <h2>
@@ -154,7 +172,7 @@
                                 <a href="#">
                                     <p></p>
                                     <div class="txt">
-                                        <p class="tit">대한항공카드 혜택</p>
+                                        <p class="tit">대한항공 프로모션</p>
                                         <div class="desc">
                                             <em>기여도 100&#37;</em>
                                             <span>&#35;리디자인</span>
@@ -166,7 +184,7 @@
                                 <a href="#">
                                     <p></p>
                                     <div class="txt">
-                                        <p class="tit">스타벅스 크리스마스 케이크</p>
+                                        <p class="tit">스타벅스 프로모션</p>
                                         <div class="desc">
                                             <em>기여도 100&#37;</em>
                                             <span>&#35;리디자인</span>
@@ -178,7 +196,7 @@
                                 <a href="#">
                                     <p></p>
                                     <div class="txt">
-                                        <p class="tit">카카오프렌즈 다이어리</p>
+                                        <p class="tit">카카오프렌즈 프로모션</p>
                                         <div class="desc">
                                             <em>기여도 100&#37;</em>
                                             <span>&#35;리디자인</span>
@@ -190,7 +208,7 @@
                                 <a href="#">
                                     <p></p>
                                     <div class="txt">
-                                        <p class="tit">쇼핑몰 브랜드위크</p>
+                                        <p class="tit">제이스타일 프로모션</p>
                                         <div class="desc">
                                             <em>기여도 100&#37;</em>
                                             <span>&#35;디자인</span>
@@ -202,7 +220,7 @@
                                 <a href="#">
                                     <p></p>
                                     <div class="txt">
-                                        <p class="tit">출석체크</p>
+                                        <p class="tit">출석체크 프로모션</p>
                                         <div class="desc">
                                             <em>기여도 100&#37;</em>
                                             <span>&#35;디자인</span>
@@ -238,7 +256,7 @@
                                 <a href="#">
                                     <p><img src="" alt=""></p>
                                     <div class="txt">
-                                        <p class="tit">제이스타일 데님코어</p>
+                                        <p class="tit">제이스타일 배너</p>
                                         <div class="desc">
                                             <em>기여도 100&#37;</em>
                                             <span>&#35;디자인</span>
@@ -262,7 +280,7 @@
                                 <a href="#">
                                     <p><img src="" alt=""></p>
                                     <div class="txt">
-                                        <p class="tit">레드프린팅 인쇄물</p>
+                                        <p class="tit">레드프린팅 배너</p>
                                         <div class="desc">
                                             <em>기여도 100&#37;</em>
                                             <span>&#35;리디자인</span>
@@ -295,7 +313,7 @@
                                 <a href="#">
                                     <p><img src="" alt=""></p>
                                     <div class="txt">
-                                        <p class="tit">엽기떡볶이 밀키트</p>
+                                        <p class="tit">엽기떡볶이 SNS</p>
                                         <div class="desc">
                                             <em>기여도 100&#37;</em>
                                             <span>&#35;디자인</span>
@@ -307,7 +325,7 @@
                                 <a href="#">
                                     <p><img src="" alt=""></p>
                                     <div class="txt">
-                                        <p class="tit">쇼핑몰 워커</p>
+                                        <p class="tit">제이스타일 SNS</p>
                                         <div class="desc">
                                             <em>기여도 100&#37;</em>
                                             <span>&#35;디자인</span>
@@ -319,7 +337,7 @@
                                 <a href="#">
                                     <p><img src="" alt=""></p>
                                     <div class="txt">
-                                        <p class="tit">롬앤 립스틱</p>
+                                        <p class="tit">롬앤 SNS</p>
                                         <div class="desc">
                                             <em>기여도 100&#37;</em>
                                             <span>&#35;디자인</span>

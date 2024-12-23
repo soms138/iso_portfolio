@@ -42,16 +42,86 @@ header .header_wrap {
     justify-content: space-between;
     align-items: center;
 }
-header span {
+header .header_wrap > span {
     font-weight: 600;
     font-size: 1rem;
     letter-spacing: -0.0625rem;
     color: #fff;
 }
-header span:nth-last-child(1) {text-align: end;}
-header a {
+header .header_wrap > span:nth-last-child(1) {text-align: end;}
+header .home {
     display: inline-block;
     background: url(../images/icon/ico_home_w.png) no-repeat center / cover;
     width: 20px; 
     height: 20px;
 }
+header .header_wrap nav {display: none;}
+header .header_wrap nav .nav_t {transition:all 0.5s;}
+header .header_wrap nav .nav_t > li {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+header .header_wrap nav .nav_t > li > a {
+    position: relative;
+    z-index: 999;
+    width: 23px;
+    height: 18px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+header .header_wrap nav .nav_t > li > a span {
+    border-radius: 0.5px;
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+}
+header .header_wrap nav .nav_t > li .nav_open_wrap {
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    transition:all 0.5s;
+    transform: translateY(-100%);
+}
+header .header_wrap nav .nav_t > li .nav_open_t {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-left: 20px
+}
+header .header_wrap nav .nav_t li .nav_open_t li {margin-bottom: 40px;}
+header .header_wrap nav .nav_t li .nav_open_t li:nth-last-child(1) {margin-bottom: 0;}
+header .header_wrap nav .nav_t li .nav_open_t li > a {
+    position: relative;
+    transition: all 0.5s;
+}
+header .header_wrap nav .nav_t li .nav_open_t li > a::after {
+    content:''; display:block;
+    width:100%; height:2px; background:#F18E64;
+    position:absolute; bottom:-10px;
+    transform:scaleX(0);
+    transform-origin: 0;
+    transition:all 0.5s;
+}
+header .header_wrap nav .nav_t li .nav_open_t li > a:hover::after {
+    transform:scaleX(1);
+}
+header .header_wrap nav .nav_t li .nav_open_t li > a span {
+    animation: opacity_fix 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.0625rem;
+    color: #fff;
+}
+header .header_wrap nav .nav_t li .nav_open_t li > a:hover span {color: #F18E64;}
