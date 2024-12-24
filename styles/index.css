@@ -74,15 +74,14 @@ main section {position: relative;}
 
 /* intro */
 main .intro {
-    background-image: url(../images/back_sea_g.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../images/back_sea_g.jpg) no-repeat center / cover;
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
     position: relative;
     z-index: 200;
+    -ms-interpolation-mode: nearest-neighbor;
+	image-rendering: pixelated;
 }
 main .intro::after {
     content: '';
@@ -196,10 +195,6 @@ main .web video {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-main .web1 {background-color: aqua;}
-main .web2 {background-color: #ccc;}
-main .web3 {background-color: lightskyblue;}
 
 main .web .txt {
     position: absolute;
@@ -404,6 +399,8 @@ main .outro {
     z-index: 700;
     background: url(../images/back_sea_g.jpg) no-repeat center / cover;
     background-attachment: fixed;
+    -ms-interpolation-mode: nearest-neighbor;
+	image-rendering: pixelated;
 }
 main .outro::after {
     content: '';
