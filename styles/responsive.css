@@ -52,7 +52,7 @@
 @media screen and (max-width:720px){
     main .intro .intro_wrap > h1 {letter-spacing: 0.5rem;}
     main .intro_wrap > h1, main .intro_wrap > p {padding: 30px;}
-    main .about .about_wrap {padding: 0 30px;}
+    main .about .about_wrap {padding: 0 100px;}
 }
 @media screen and (max-width:620px){
     main .section .contents ul {width: 100%; justify-content: space-between; padding: 0 30px;}
@@ -81,7 +81,7 @@
 @media screen and (max-width:540px){
     header .header_wrap{padding: 20px;}
     main .intro_wrap > h1, main .intro_wrap > p {padding: 20px;}
-    main .about .about_wrap {padding: 0 20px;}
+    main .about .about_wrap {padding: 0 50px;}
     main .section .contents ul {padding: 0 20px;}
     main .section .contents ul li a > p {width: 240px; height: 240px;}
 }
@@ -112,6 +112,7 @@
 }
 @media screen and (max-width:460px){
     main .section .contents ul li a > p {width: 200px; height: 200px;}
+    main .about .about_wrap {padding: 0 20px;}
 }
 @media screen and (max-width:450px){
     main .section .contents ul li a > p {width: 195px; height: 195px;}

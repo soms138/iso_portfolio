@@ -48,6 +48,7 @@ header .header_wrap > span {
     letter-spacing: -0.0625rem;
     color: #fff;
     width: 75px;
+    white-space: no wrap;
 }
 header .header_wrap > span:nth-last-child(1) {text-align: end;}
 header .home {

@@ -137,6 +137,7 @@ main .about .about_wrap {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    padding: 0 220px;
 }
 main .about h2 {
     display: flex;
