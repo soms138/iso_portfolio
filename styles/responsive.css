@@ -26,12 +26,12 @@
 @media screen and (max-width:870px){
     main .section .contents ul {width: 565px;}
     main .section .contents ul li a > p {width: 270px; height: 270px; margin-bottom: 20px;}
-    main .intro .intro_wrap > p {font-size: 4rem;}
-    main .intro .intro_wrap > h1 {font-size: 5rem;}
+    main .intro .intro_wrap > p {font-size: 5rem;}
+    main .intro .intro_wrap > h1 {font-size: 6rem;}
 }
 @media screen and (max-width:790px){
-    main .intro .intro_wrap > p {font-size: 3rem;}
-    main .intro .intro_wrap > h1 {font-size: 4rem;}
+    main .intro .intro_wrap > p {font-size: 4.5rem;}
+    main .intro .intro_wrap > h1 {font-size: 5.5rem;}
     main .web .txt .tit h3 {font-size: 2rem;}
     main .web .txt .tit .desc p {margin-right: 10px;}
     main .web .txt .tit .desc .tag span {margin-right: 5px;}
@@ -50,7 +50,7 @@
     main .outro .outro_wrap p {font-size: 1rem; line-height: 2.2rem;}
 }
 @media screen and (max-width:720px){
-    main .intro .intro_wrap > h1 {letter-spacing: 0.5rem;}
+    main .intro .intro_wrap > h1 {letter-spacing: 1rem;}
     main .intro_wrap > h1, main .intro_wrap > p {padding: 30px;}
     main .about .about_wrap {padding: 0 100px;}
 }
@@ -65,6 +65,8 @@
 }
 @media screen and (max-width:600px){
     main .section .contents ul li a > p {width: 255px; height: 255px;}
+    main .intro .intro_wrap > p {font-size: 4rem;}
+    main .intro .intro_wrap > h1 {font-size: 5rem; letter-spacing: 0.9rem;}
 }
 @media screen and (max-width:590px){
     main .section .contents ul li a > p {width: 250px; height: 250px;}
@@ -77,6 +79,7 @@
 }
 @media screen and (max-width:555px){
     main .section .contents ul li a > p {width: 235px; height: 235px;}
+    main .intro .intro_wrap > h1 {letter-spacing: 0.7rem;}
 }
 @media screen and (max-width:540px){
     header .header_wrap{padding: 20px;}
@@ -113,11 +116,11 @@
 @media screen and (max-width:460px){
     main .section .contents ul li a > p {width: 200px; height: 200px;}
     main .about .about_wrap {padding: 0 20px;}
+    main .intro .intro_wrap > p {font-size: 3.3rem;}
+    main .intro .intro_wrap > h1 {font-size: 4.3rem; letter-spacing: 0.5rem;}
 }
 @media screen and (max-width:450px){
     main .section .contents ul li a > p {width: 195px; height: 195px;}
-    main .intro .intro_wrap > p {font-size: 3rem;}
-    main .intro .intro_wrap > h1 {font-size: 3.7rem; letter-spacing: 0.3rem;}
 }
 @media screen and (max-width:440px){
     main .section .contents ul li a > p {width: 190px; height: 190px;}
@@ -130,8 +133,8 @@
 }
 @media screen and (max-width:410px){
     main .section .contents ul li a > p {width: 175px; height: 175px;}
-    main .intro .intro_wrap > p {font-size: 2.5rem;}
-    main .intro .intro_wrap > h1 {font-size: 3.2rem; letter-spacing: 0.3rem;}
+    main .intro .intro_wrap > p {font-size: 3rem;}
+    main .intro .intro_wrap > h1 {font-size: 4rem; letter-spacing: 0.3rem;}
 }
 @media screen and (max-width:400px){
     main .section .contents ul li a > p {width: 170px; height: 170px;}

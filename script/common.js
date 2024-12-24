@@ -79,11 +79,11 @@ intro.addEventListener('mouseout',function(){
     cursor.style.width = '100px'
     cursor.style.height = '100px'
 })
-aTag.addEventListener('mouseover',function(){
-    cursor.style.width = '25px'
-    cursor.style.height = '25px'
-})
-aTag.addEventListener('mouseout',function(){
-    cursor.style.width = '100px'
-    cursor.style.height = '100px'
-})
+// aTag.addEventListener('mouseover',function(){
+//     cursor.style.width = '25px'
+//     cursor.style.height = '25px'
+// })
+// aTag.addEventListener('mouseout',function(){
+//     cursor.style.width = '100px'
+//     cursor.style.height = '100px'
+// })
