@@ -90,8 +90,8 @@ main .intro::after {
     background-color: rgb(0, 0, 0, 0.3);
 }
 main .intro_wrap > h1, main .intro_wrap > p {
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
+    font-family:'tit'; 
+    font-weight: 600;
     letter-spacing: -0.1rem;
     position: absolute;
     top: 50%;

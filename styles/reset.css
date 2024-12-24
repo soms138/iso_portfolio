@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family:'tit'; /* 글꼴명 지정 */
-    src:url(../fonts/FontsFree-Net-Athelas-BoldItalic.ttf); /* 글꼴경로 지정 */
+    src:url(../fonts/AthelasBold.ttf); /* 글꼴경로 지정 */
 }
 
 /* reset.css */
