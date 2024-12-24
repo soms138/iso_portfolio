@@ -12,12 +12,12 @@
         width: 350px;
         height: 350px;
     }
-    #mouse {display: none;}
 }
 @media screen and (max-width:1180px){
     header .home {display: none;}
     main nav {display: none;}
     header .header_wrap nav {display: inline-block;}
+    #mouse {display: none; cursor: none;}
 }
 @media screen and (max-width:900px){
     header .header_wrap{padding: 20px 30px;}
