@@ -7,6 +7,7 @@ const menu = document.querySelectorAll('.menu')
 const cursor = document.querySelector('#mouse')
 const circle = cursor.getBoundingClientRect();
 const intro = document.querySelector('.intro_wrap')
+const aTag = document.querySelector('a')
 
 let boolean = true
 
@@ -56,6 +57,10 @@ window.addEventListener('scroll',function(){
     }
 })
 
+
+
+// 마우스
+
 window.addEventListener("mousemove", (e) => {
     gsap.to(cursor, {
         duration: 0.2,
@@ -71,6 +76,14 @@ intro.addEventListener('mouseover',function(){
     cursor.style.height = '400px'
 })
 intro.addEventListener('mouseout',function(){
+    cursor.style.width = '100px'
+    cursor.style.height = '100px'
+})
+aTag.addEventListener('mouseover',function(){
+    cursor.style.width = '25px'
+    cursor.style.height = '25px'
+})
+aTag.addEventListener('mouseout',function(){
     cursor.style.width = '100px'
     cursor.style.height = '100px'
 })

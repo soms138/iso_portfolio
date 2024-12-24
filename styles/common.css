@@ -47,7 +47,7 @@ header .header_wrap > span {
     font-size: 1rem;
     letter-spacing: -0.0625rem;
     color: #fff;
-    width: 75px;
+    width: 80px;
     white-space: no wrap;
 }
 header .header_wrap > span:nth-last-child(1) {text-align: end;}
