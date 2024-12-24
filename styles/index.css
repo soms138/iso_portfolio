@@ -74,7 +74,8 @@ main section {position: relative;}
 
 /* intro */
 main .intro {
-    background: url(../images/back_sea_g.jpg)  no-repeat center / cover ;
+    background: url(../images/back_sea_g.jpg)  no-repeat center;
+    background-size: auto;
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
@@ -214,10 +215,10 @@ main .web .txt .tit {
     margin-bottom: 30px;
 }
 main .web .txt .tit h3 {
-    color: #fff;
-    letter-spacing: -0.05rem;
-    font-size: 2.25rem;
     font-weight: 700;
+    font-size: 2.25rem;
+    letter-spacing: -0.05rem;
+    color: #fff;
     margin-bottom: 10px;
     transform-origin: right;
     white-space: nowrap;
