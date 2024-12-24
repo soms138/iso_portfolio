@@ -99,7 +99,7 @@ main .intro_wrap > h1, main .intro_wrap > p {
     color: #fff;
     padding: 70px;
 }
-main .intro .intro_wrap > p {font-size: 6rem;}
+main .intro .intro_wrap > p {font-size: 7rem;}
 main .intro .intro_wrap > p:nth-child(1) {
     animation: opacity 0.5s ease forwards;
     animation-delay: 1s;
@@ -110,7 +110,7 @@ main .intro .intro_wrap > p:nth-child(2) {
     animation-delay: 1.5s;
 }
 main .intro .intro_wrap > h1 {
-    font-size: 7rem;
+    font-size: 8rem;
     opacity: 0;
     animation: opacity_fix 1.5s ease forwards;
     animation-delay: 2.5s;
@@ -139,7 +139,6 @@ main .about .about_wrap {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 0 220px;
 }
 main .about h2 {
     display: flex;
