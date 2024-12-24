@@ -74,8 +74,8 @@ main section {position: relative;}
 
 /* intro */
 main .intro {
-    background: url(../images/back_sea_g.svg) no-repeat center / cover;
-    background-attachment: fixed;
+    /* background: url(../images/back_sea_g.svg) no-repeat center / cover;
+    background-attachment: fixed; */
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -118,6 +118,10 @@ main .intro .intro_wrap > h1 {
     animation-delay: 2.5s;
     transition: letter-spacing 0.5s 3s linear !important;
     letter-spacing: 1.1rem;
+}
+main .intro .bg-image img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; object-fit: cover;
 }
 
 /* about */
