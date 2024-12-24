@@ -69,6 +69,10 @@
 }
 @media screen and (max-width:600px){
     main .section .contents_wrap ul li a > p {width: 255px; height: 255px;}
+    br{
+    display: inline-block;
+    content: " ";
+    }
 }
 @media screen and (max-width:590px){
     main .section .contents_wrap ul li a > p {width: 250px; height: 250px;}
@@ -125,10 +129,6 @@
 }
 @media screen and (max-width:450px){
     main .section .contents_wrap ul li a > p {width: 195px; height: 195px;}
-    br{
-    display: inline-block;
-    content: " ";
-    }
     main .intro .intro_wrap > p {font-size: 3.5rem;}
     main .intro .intro_wrap > h1 {font-size: 4.5rem; letter-spacing: 0.4rem;}
 }
