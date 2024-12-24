@@ -31,17 +31,19 @@
 @media screen and (max-width:790px){
     main .intro .intro_wrap > p {font-size: 5.5rem;}
     main .intro .intro_wrap > h1 {font-size: 6.5rem;}
-    main .web .txt .tit h3 {font-size: 2rem;}
+    main .web .txt .tit {margin-bottom: 40px;}
+    main .web .txt .tit h3 {font-size: 2rem; margin-bottom: 15px;}
     main .web .txt .tit .desc p {margin-right: 10px;}
     main .web .txt .tit .desc .tag span {margin-right: 5px;}
     main .web .txt .tit .desc p,
     main .web .txt .tit .desc .tag span,
     main .web .txt .project_btn em {font-size: 1rem;}
-    main .web .txt .project_btn {padding: 7px 7px 7px 10px;}
+    main .web .txt .project_btn {padding: 8px 8px 8px 12px;}
     main .web .txt .project_btn span {width: 18px; height:  18px;}
     main .about h2 em {font-size: 2rem; margin-bottom: 30px;}
     main .about p {font-size: 1rem; line-height: 2.2rem;}
-    main .section .contents_wrap ul li a .txt .tit {font-size: 1.25rem;}
+    main .section .contents_wrap ul li a > p {margin-bottom: 20px;}
+    main .section .contents_wrap ul li a .txt .tit {font-size: 1.25rem; margin-bottom: 12px;}
     main .section .contents_wrap ul li a .txt .desc em {margin-right: 7px;}
     main .section .contents_wrap ul li a .txt .desc em,
     main .section .contents_wrap ul li a .txt .desc span {font-size: 1rem;}
@@ -96,8 +98,8 @@
     main .section .contents_wrap ul li a > p {width: 230px; height: 230px;}
 }
 @media screen and (max-width:510px){
-    main .section .contents_wrap ul li a > p {width: 225px; height: 225px; margin-bottom: 15px;}
-    main .section .contents_wrap ul li a .txt .tit {font-size: 1.1rem; margin-bottom: 8px;}
+    main .section .contents_wrap ul li a > p {width: 225px; height: 225px; margin-bottom: 18px;}
+    main .section .contents_wrap ul li a .txt .tit {font-size: 1.1rem; margin-bottom: 10px;}
     main .section .contents_wrap ul li a .txt .desc em {margin-right: 5px;}
     main .section .contents_wrap ul li a .txt .desc em,
     main .section .contents_wrap ul li a .txt .desc span {font-size: 0.85rem;}

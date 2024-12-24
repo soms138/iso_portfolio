@@ -271,10 +271,6 @@ main .web .txt .project_btn:hover span {
     background: url(../images/icon/ico_arrow_o.png) no-repeat center / cover;
 }
 
-main .web1 video {}
-main .web2 video {}
-main .web3 video {}
-
 main #design {
     background-color: #222;
     background-size: cover;
