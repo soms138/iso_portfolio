@@ -74,8 +74,10 @@ main section {position: relative;}
 
 /* intro */
 main .intro {
-    background: url(../images/back_sea_g.jpg)  no-repeat center;
-    background-size: auto;
+    background-image: url(../images/back_sea_g.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
