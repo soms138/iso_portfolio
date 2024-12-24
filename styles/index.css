@@ -118,7 +118,7 @@ main .intro .intro_wrap > h1 {
     letter-spacing: 1.1rem;
 }
 main .intro .bg-image img {
-    position: absolute; inset: 0;
+    position: fixed; inset: 0;
     width: 100%; height: 100%; object-fit: cover;
 }
 
@@ -208,14 +208,14 @@ main .web .txt .tit {
     display: flex;
     flex-flow: column nowrap;
     align-items:center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 main .web .txt .tit h3 {
     font-weight: 700;
     font-size: 2.25rem;
     letter-spacing: -0.05rem;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     transform-origin: right;
     white-space: nowrap;
 }
@@ -275,7 +275,7 @@ main .web1 video {}
 main .web2 video {}
 main .web3 video {}
 
-main .design {
+main #design {
     background-color: #222;
     background-size: cover;
     width: 100vw;
@@ -309,17 +309,19 @@ main #promo h2 span, main #banner h2 span, main #sns h2 span {
     background-color: #2050A4;
     margin-left: 3px;
 }
-main .section .contents {}
-main .section .contents ul {
+
+/* 공통 section */
+main .section .contents_wrap {}
+main .section .contents_wrap ul {
     display: flex;
     flex-flow: row wrap;
     width: 970px;
     align-items: center;
 }
-main .section .contents ul li {margin: 0 35px 50px 0;}
-main .section .contents ul li:nth-child(3n) {margin-right: 0;}
-main .section .contents ul li a {}
-main .section .contents ul li a > p {
+main .section .contents_wrap ul li {margin: 0 35px 50px 0;}
+main .section .contents_wrap ul li:nth-child(3n) {margin-right: 0;}
+main .section .contents_wrap ul li a {}
+main .section .contents_wrap ul li a > p {
     width: 300px;
     height: 300px;
     border-radius: 20px;
@@ -330,66 +332,44 @@ main .section .contents ul li a > p {
     background-size: 100% auto;
     transition: all 0.3s;
 }
-main .section .contents ul li a > p:hover {background-size: 110% auto;}
-main .section .contents ul li a .txt {}
-main .section .contents ul li a .txt .tit {
+main .section .contents_wrap ul li a > p:hover {background-size: 110% auto;}
+main .section .contents_wrap ul li a .txt {}
+main .section .contents_wrap ul li a .txt .tit {
     color: #fff;
     font-weight: 600;
     font-size: 1.5rem;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
-main .section .contents ul li a .txt .desc {
+main .section .contents_wrap ul li a .txt .desc {
     display: flex;
     flex-flow: row nowrap;
 }
-main .section .contents ul li a .txt .desc em {
+main .section .contents_wrap ul li a .txt .desc em {
     color: rgb(255, 255, 255, 0.5);
     margin-right: 10px;
     font-size: 1.15rem;
 }
-main .section .contents ul li a .txt .desc span {
+main .section .contents_wrap ul li a .txt .desc span {
     color: rgb(255, 255, 255, 0.5);
     font-size: 1.15rem;
 }
 
-/* more 더보기 버튼 */
-main .section .contents .more {
-    display: flex;
-    align-items: center;
-    margin-left: -25px;
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-}
-main .section .contents .more span {
-    color: #aaa;
-    font-size: 1.15rem;
-}
-main .section .contents .more img {
-    width: 10px; height: 10px;
-    margin-right: 5px;
-}
-
 /* promo img 썸네일 이미지*/
-main #promo .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_korea.jpg);}
-main #promo .contents ul li:nth-child(2) a > p {background-image: url(../images/thumb_starbucks.jpg);}
-main #promo .contents ul li:nth-child(3) a > p {background-image: url(../images/thumb_diary.jpg);}
-main #promo .contents ul li:nth-child(4) a > p {background-image: url(../images/thumb_brand.jpg);}
-main #promo .contents ul li:nth-child(5) a > p {background-image: url(../images/thumb_attendance.jpg);}
+main #promo .contents_wrap ul li:nth-child(1) a > p {background-image: url(../images/thumb_korea.jpg);}
+main #promo .contents_wrap ul li:nth-child(2) a > p {background-image: url(../images/thumb_starbucks.jpg);}
+main #promo .contents_wrap ul li:nth-child(3) a > p {background-image: url(../images/thumb_diary.jpg);}
+main #promo .contents_wrap ul li:nth-child(4) a > p {background-image: url(../images/thumb_brand.jpg);}
+main #promo .contents_wrap ul li:nth-child(5) a > p {background-image: url(../images/thumb_attendance.jpg);}
 
 /* banner img */
-main #banner .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_denim.jpg);}
-main #banner .contents ul li:nth-child(2) a > p {background-image: url();}
-main #banner .contents ul li:nth-child(3) a > p {background-image: url(../images/thumb_red.jpg);}
+main #banner .contents_wrap ul li:nth-child(1) a > p {background-image: url(../images/thumb_denim.jpg);}
+main #banner .contents_wrap ul li:nth-child(2) a > p {background-image: url();}
+main #banner .contents_wrap ul li:nth-child(3) a > p {background-image: url(../images/thumb_red.jpg);}
 
 /* sns img */
-main #sns .contents ul li:nth-child(1) a > p {background-image: url(../images/thumb_tteokbokki.jpg);}
-main #sns .contents ul li:nth-child(2) a > p {background-image: url(../images/thumb_walker.jpg);}
-main #sns .contents ul li:nth-child(3) a > p {background-image: url(../images/thumb_romand.jpg);}
-
-/* pop up 이미지 */
-.popup {}
-.popup img {opacity: 0;}
+main #sns .contents_wrap ul li:nth-child(1) a > p {background-image: url(../images/thumb_tteokbokki.jpg);}
+main #sns .contents_wrap ul li:nth-child(2) a > p {background-image: url(../images/thumb_walker.jpg);}
+main #sns .contents_wrap ul li:nth-child(3) a > p {background-image: url(../images/thumb_romand.jpg);}
 
 main .outro {
     width: 100vw;
