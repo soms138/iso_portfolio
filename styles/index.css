@@ -359,8 +359,8 @@ main #promo .contents_wrap ul li:nth-child(5) a > p {background-image: url(../im
 
 /* banner img */
 main #banner .contents_wrap ul li:nth-child(1) a > p {background-image: url(../images/thumb_denim.jpg);}
-main #banner .contents_wrap ul li:nth-child(2) a > p {background-image: url();}
-main #banner .contents_wrap ul li:nth-child(3) a > p {background-image: url(../images/thumb_red.jpg);}
+main #banner .contents_wrap ul li:nth-child(2) a > p {background-image: url(../images/thumb_red.jpg);}
+main #banner .contents_wrap ul li:nth-child(3) a > p {background-image: url();}
 
 /* sns img */
 main #sns .contents_wrap ul li:nth-child(1) a > p {background-image: url(../images/thumb_tteokbokki.jpg);}
