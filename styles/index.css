@@ -366,6 +366,7 @@ main #banner .contents_wrap ul li:nth-child(3) a > p {background-image: url();}
 main #sns .contents_wrap ul li:nth-child(1) a > p {background-image: url(../images/thumb_tteokbokki.jpg);}
 main #sns .contents_wrap ul li:nth-child(2) a > p {background-image: url(../images/thumb_walker.jpg);}
 main #sns .contents_wrap ul li:nth-child(3) a > p {background-image: url(../images/thumb_romand.jpg);}
+main #sns .contents_wrap ul li:nth-child(4) a > p {background-image: url(../images/thumb_oldferry.jpg);}
 
 main .outro {
     width: 100vw;
