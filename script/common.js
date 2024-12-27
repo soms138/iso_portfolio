@@ -76,26 +76,3 @@ window.addEventListener('scroll',function(){
         header_txt.style.borderBottom = 'solid 1px rgb(255, 255, 255, 0)'
     }
 })
-
-
-
-// 마우스
-
-window.addEventListener("mousemove", (e) => {
-    gsap.to(cursor, {
-        duration: 0.2,
-        left: e.pageX - circle.width/2,
-        top: e.pageY- circle.height/2
-    });
-});
-
-cursor.style.transition = 'all 0.3s linear'
-
-intro.addEventListener('mouseover',function(){
-    cursor.style.width = '400px'
-    cursor.style.height = '400px'
-})
-intro.addEventListener('mouseout',function(){
-    cursor.style.width = '100px'
-    cursor.style.height = '100px'
-})
