@@ -58,6 +58,7 @@
 }
 @media screen and (max-width:750px){
     main .section .list .contents .swiper-slide a > p {width: 260px; height: 260px;}
+    main #design > p span {font-size: 1rem;}
 }
 @media screen and (max-width:720px){
     main .intro .intro_wrap > h1 {letter-spacing: 1rem;}
