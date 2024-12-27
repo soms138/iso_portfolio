@@ -58,7 +58,7 @@
 }
 @media screen and (max-width:750px){
     main .section .list .contents .swiper-slide a > p {width: 260px; height: 260px;}
-    main #design > p span {font-size: 1rem;}
+    main #design > p span {font-size: 0.9rem;}
 }
 @media screen and (max-width:720px){
     main .intro .intro_wrap > h1 {letter-spacing: 1rem;}
@@ -139,6 +139,7 @@
     main .section .contents_wrap .list .contents .swiper-slide a .txt .desc em {margin-right: 7px;}
     main .section .contents_wrap .list .contents .swiper-slide a .txt .desc em,
     main .section .contents_wrap .list .contents .swiper-slide a .txt .desc span {font-size: 1rem;}
+    main #design > p span {font-size: 0.85rem;}
 }
 @media screen and (max-width:430px){
     main .section .list .contents .swiper-slide a  {padding: 27px 27px;}
