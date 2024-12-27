@@ -70,10 +70,7 @@
 @media screen and (max-width:670px){
     main .intro .intro_wrap > p {font-size: 4.5rem;}
     main .intro .intro_wrap > h1 {font-size: 5.5rem; letter-spacing: 0.9rem;}
-    br{
-    display: inline-block;
-    content: " ";
-    }
+    br{display: none;}
     main .section .list .contents .swiper-slide a > p {width: 240px; height: 240px;}
 }
 @media screen and (max-width:650px){
