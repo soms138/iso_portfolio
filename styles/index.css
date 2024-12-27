@@ -70,7 +70,11 @@ main nav .nav li .nav_open li a span {
 main nav .nav li .nav_open li a:hover span {color: #F18E64;}
 
 /* section */
-main section {position: relative;}
+main section {
+    opacity: 0;
+    position: relative;
+    transform: translateY(-10%);
+}
 
 /* intro */
 main .intro {
@@ -368,7 +372,7 @@ main #sns .contents_wrap ul li:nth-child(2) a > p {background-image: url(../imag
 main #sns .contents_wrap ul li:nth-child(3) a > p {background-image: url(../images/thumb_romand.jpg);}
 main #sns .contents_wrap ul li:nth-child(4) a > p {background-image: url(../images/thumb_oldferry.jpg);}
 
-main .outro {
+/* main .outro {
     width: 100vw;
     height: 50vh;
     position: relative;
@@ -419,4 +423,4 @@ main .outro .outro_wrap .outro_txt p {
 main .outro .outro_wrap .bg-image img {
     position: absolute; inset: 0;
     width: 100%; height: 100%; object-fit: cover;
-}
+} */

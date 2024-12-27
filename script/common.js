@@ -11,6 +11,24 @@ const aTag = document.querySelector('a')
 
 let boolean = true
 
+function section_event(a){
+    section[a].style.transition = 'all 0.3s linear'
+    window.addEventListener('scroll',function(){
+        if(window.pageYOffset > section[a].offsetTop-400){
+            section[a].style.opacity = '1'
+            section[a].style.transform = 'translateY(0%)'
+        }else{
+            section[a].style.opacity = '0'
+            section[a].style.transform = 'translateY(10%)'
+        }
+    })
+}
+section_event(0)
+section_event(1)
+section_event(2)
+section_event(3)
+section_event(4)
+section_event(5)
 
 navBtn.addEventListener('click',function(e){
     e.preventDefault()
@@ -50,9 +68,11 @@ header_txt.style.transition = 'all 0.3s linear'
 window.addEventListener('scroll',function(){
     if(window.pageYOffset > section[0].offsetTop+200){
         header_txt.style.backgroundColor = 'rgb(34, 34, 34, 0.7)'
+        header_txt.style.backdropFilter = 'blur(5px)'
         header_txt.style.borderBottom = 'solid 1px rgb(255, 255, 255, 0.3)'
     }else{
         header_txt.style.backgroundColor = 'rgb(255, 255, 255, 0)'
+        header_txt.style.backdropFilter = 'blur(0)'
         header_txt.style.borderBottom = 'solid 1px rgb(255, 255, 255, 0)'
     }
 })
